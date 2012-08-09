@@ -1,0 +1,43 @@
+
+<h1>Tweets</h1>
+
+<%= form_for(@tweet, :url => "user") do |f| %>
+ 
+  <div class="field">
+    <%= f.label :Usuario %><br />
+    <%= f.text_field :user %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Buscar usuario" %>
+  </div>
+  </br>
+<% end %>
+
+<%= form_for(@tweet, :url => "read_text") do |f| %>
+ 
+  <div class="field">
+    <%= f.label :Estado %><br />
+    <%= f.text_field :status %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit "Buscar Estado" %>
+  </div>
+  </br>
+<% end %>
+
+<%= form_for(@tweet, :url => "update") do |f| %>
+ 
+  <div class="field">
+    <%= f.label :Mensaje %><br />
+    <%= f.text_field :message %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Enviar Mensaje" %>
+  </div>
+<% end %>
+
+
+<br />
+
+
